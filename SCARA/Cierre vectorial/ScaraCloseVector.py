@@ -57,7 +57,6 @@ def main():
             xf = xi - np.dot(Jin, fx)
             xi = xf
             
-            residue = xf - xi
             residue = np.linalg.norm(fx)
 
             x1 = x0 + a*math.cos(xi[1][0])
